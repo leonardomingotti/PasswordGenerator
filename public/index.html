@@ -2,27 +2,25 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CCTB - Random Strong Password Generator using JavaScript</title>
+    <title>CCTB - Random Strong Password Generator</title>
 
-    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <link rel="stylesheet" href="styles/style.css">
-
-    <title>Random Strong Password Generator using JavaScript</title>
 </head>
 
 <body>
-    <div class="container">
-        <img class="rounded" src="https://guscanada.com/wp-content/uploads/2021/09/CCTB_logo_1_RGB.png" width="100px">
-        <h2>SQAE113 - DevOps Infrastructure Level 1 - CCTB</h2>
-        <p><br>
-        <h3>Feb 2026</H3>
-        </p>
+    <div class="header-card">
+        <img class="rounded" src="https://guscanada.com/wp-content/uploads/2021/09/CCTB_logo_1_RGB.png" alt="CCTB Logo" width="100px">
+        <h2>SQAE113 - DevOps Infrastructure Level 1</h2>
+        <h3>Feb 2026</h3>
     </div>
+
     <div class="container">
         <h2 class="title">Password Generator</h2>
+        
         <div class="result">
             <div class="result__title field-title">Generated Password</div>
             <div class="result__info right">click to copy</div>
@@ -30,8 +28,9 @@
             <div class="result__viewbox" id="result">CLICK GENERATE</div>
             <button id="copy-btn" style="--x: 0; --y: 0"><i class="far fa-copy"></i></button>
         </div>
+
         <div class="length range__slider" data-min="4" data-max="32">
-            <div class="length__title field-title" data-length='0'>length:</div>
+            <div class="length__title field-title" data-length='16'>length:</div>
             <input id="slider" type="range" min="4" max="32" value="16" />
         </div>
 
@@ -58,7 +57,7 @@
         <button class="btn generate" id="generate">Generate Password</button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
